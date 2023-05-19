@@ -453,3 +453,514 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
 $
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  bundle 3
+  
+  Exercise 1
+  
+  
+  
+  NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$ git log
+commit 3974b1968d36fe2acfae66f433760c290caff0c2 (HEAD -> ft/team-page)
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:30:37 2023 -0700
+
+    changes added
+
+commit 87aaf01670b09493f82f947bc1a497c0869dc6e0
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:22:55 2023 -0700
+
+    changes added
+
+commit 27ac603a379a3b4866557644c530b9e7a77ea43d (main, ft/contact-page)
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:06:23 2023 -0700
+
+    Resolving conflicts
+
+commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+Merge: 80dc27b 400e521
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:04:16 2023 -0700
+
+    Merge branch 'ft/servic-redesign'
+
+commit 80dc27b1d43fa42fd76c82c6f07da103c4d5259e
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 00:56:40 2023 -0700
+
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git cherry-pick commit 3974b1968d36fe2acfae66f433760c290caff0c2 (HEAD -> ft/team-page)
+bash: syntax error near unexpected token `('
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:30:37 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     changes added
+bash: changes: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 87aaf01670b09493f82f947bc1a497c0869dc6e0
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:22:55 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     changes added
+bash: changes: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 27ac603a379a3b4866557644c530b9e7a77ea43d (main, ft/contact-page)
+bash: syntax error near unexpected token `('
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:06:23 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     Resolving conflicts
+bash: Resolving: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Merge: 80dc27b 400e521
+bash: Merge:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:04:16 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     Merge branch 'ft/servic-redesign'
+bash: Merge: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 80dc27b1d43fa42fd76c82c6f07da103c4d5259e
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 00:56:40 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git cherry-pick <commit 3974b1968d36fe2acfae66f433760c290caff0c2 (HEAD -> ft/team-page)>
+bash: syntax error near unexpected token `('
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:30:37 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     changes added
+bash: changes: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 87aaf01670b09493f82f947bc1a497c0869dc6e0
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:22:55 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     changes added
+bash: changes: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 27ac603a379a3b4866557644c530b9e7a77ea43d (main, ft/contact-page)
+bash: syntax error near unexpected token `('
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:06:23 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     Resolving conflicts
+bash: Resolving: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Merge: 80dc27b 400e521
+bash: Merge:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 01:04:16 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$     Merge branch 'ft/servic-redesign'
+bash: Merge: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ commit 80dc27b1d43fa42fd76c82c6f07da103c4d5259e
+bash: commit: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Author: Manzikim <manzidakimo@gmail.com>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ Date:   Sat May 20 00:56:40 2023 -0700
+bash: Date:: command not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git log
+commit 27ac603a379a3b4866557644c530b9e7a77ea43d (HEAD -> ft/contact-page, main)       
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:06:23 2023 -0700
+
+    Resolving conflicts
+
+commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+Merge: 80dc27b 400e521
+Author: Manzikim <manzidakimo@gmail.com>
+Merge: 80dc27b 400e521
+commit 27ac603a379a3b4866557644c530b9e7a77ea43d (HEAD -> ft/contact-page, main)       
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:06:23 2023 -0700
+
+    Resolving conflicts
+
+commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+Merge: 80dc27b 400e521
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:04:16 2023 -0700
+
+    Merge branch 'ft/servic-redesign'
+
+commit 80dc27b1d43fa42fd76c82c6f07da103c4d5259e
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 00:56:40 2023 -0700
+
+    Add diff
+
+commit 400e5219f5c78fad600d53a05460ec8b2e96bcaa (origin/ft/servic-redesign, ft/servic-redesign)
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 00:48:57 2023 -0700
+
+    Add new changes to service.html
+
+commit befbd9d5321866629a1c34fe987a172943a9ba53 (origin/ft/bundle-2, ft/service-redesign, ft/bundle-2)
+Author: Manzikim <manzidakimo@gmail.com>
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git cherry-pick 27ac603a379a3b4866557644c530b9e7a77ea43d (HEAD -> ft/contact-page, main)
+bash: syntax error near unexpected token `('
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page)
+$ git cherry-pick 27ac603a379a3b4866557644c530b9e7a77
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/contact-page
+You are currently cherry-picking commit 27ac603.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git cherry-pick 27ac603a379a3b4866557644c530b9e7a77ea43d
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/contact-page
+You are currently cherry-picking commit 27ac603.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git cherry-pick <27ac603a379a3b4866557644c530b9e7a77ea43d>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git cherry-pick 27ac603a379a3b4866557644c530b9e7a77ea43d
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/contact-page
+You are currently cherry-picking commit 27ac603.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git commit -m "changes"
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+On branch ft/contact-page
+You are currently cherry-picking commit 27ac603.
+  (all conflicts fixed: run "git cherry-pick --continue")
+  (use "git cherry-pick --skip" to skip this patch)
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+nothing to commit, working tree clean
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/contact-page|CHERRY-PICKING)        
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+warning: cancelling a cherry picking in progress
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ touch faq.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git add faq.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git comit -m "changes"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git commit -m "changes"
+[ft/faq-page 40cac14] changes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 faq.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.33 KiB | 340.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Manzikim/bundle1/pull/new/ft/faq-page
+remote:
+To https://github.com/Manzikim/bundle1.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git log
+commit 40cac14ab02b613353ec3ed018da6750d0b86b1d (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:48:14 2023 -0700
+
+    changes
+
+commit 27ac603a379a3b4866557644c530b9e7a77ea43d (main, ft/contact-page)
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:06:23 2023 -0700
+
+    Resolving conflicts
+
+commit a28a99a0a905eef5b75a0fcf67471ab07a1d8d7e
+Merge: 80dc27b 400e521
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 01:04:16 2023 -0700
+
+    Merge branch 'ft/servic-redesign'
+
+commit 80dc27b1d43fa42fd76c82c6f07da103c4d5259e
+Author: Manzikim <manzidakimo@gmail.com>
+Date:   Sat May 20 00:56:40 2023 -0700
+
+    Add diff
+
+commit 400e5219f5c78fad600d53a05460ec8b2e96bcaa (origin/ft/servic-redesign, ft/servic-redesign)
+Author: Manzikim <manzidakimo@gmail.com>
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git revert 40cac14ab02b613353ec3ed018da6750d0b86b1d1
+fatal: bad revision '40cac14ab02b613353ec3ed018da6750d0b86b1d1'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git revert <40cac14ab02b613353ec3ed018da6750d0b86b1d1>
+bash: syntax error near unexpected token `newline'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git revert 40cac14ab02b613353ec3ed018da6750d0b86b1d1
+fatal: bad revision '40cac14ab02b613353ec3ed018da6750d0b86b1d1'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git revert '40cac14ab02b613353ec3ed018da6750d0b86b1d1'
+fatal: bad revision '40cac14ab02b613353ec3ed018da6750d0b86b1d1'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 499 bytes | 99.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Manzikim/bundle1/pull/new/ft/team-page
+remote:
+To https://github.com/Manzikim/bundle1.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$
