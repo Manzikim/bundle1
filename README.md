@@ -1,6 +1,8 @@
 practices of Git all related to bundle2
 
 Exercise 2:
+
+
 $ git add service.html
 
 NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
