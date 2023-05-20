@@ -543,6 +543,8 @@ Writing objects: 100% (4/4), 464 bytes | 232.00 KiB/s, done.
 Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 remote: 
+  
+  
 remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:      
 remote:      https://github.com/Manzikim/bundle1/pull/new/ft/home-page-redesign       
 remote:
@@ -552,3 +554,170 @@ To https://github.com/Manzikim/bundle1.git
 NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
 $
 >>>>>>> 7f835f64dfd42028a48917e44814d9fa2eff41df
+
+  
+  
+  
+  
+  
+  bundle 4
+  Exercise 1
+  
+  
+  NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote add git-copy gh repo clone Manzikim/git-copy
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from 
+
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote add git-copy https://github.com/Manzikim/git-copy
+error: remote git-copy already exists.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote add git-cop https://github.com/Manzikim/git-copy
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git commit -m " changes made "
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean        
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin main
+Everything up-to-date
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-coy main
+fatal: 'git-coy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-copy main
+remote: Repository not found.
+fatal: repository 'https://github.com/Manzikim/bundle-4.git1/' not found       
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-cop main
+To https://github.com/Manzikim/git-copy
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Manzikim/git-copy'      
+hint: Updates were rejected because the remote contains work that you do       
+hint: not have locally. This is usually caused by another repository pushing   
+hint: to the same ref. You may want to first integrate the remote changes      
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.     
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$  git remote add git-copy git@github.com:Manzikim/git-copy.git
+error: remote git-copy already exists.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$  git remote add git-cpy git@github.com:Manzikim/git-copy.git
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote
+git-cop
+git-copy
+git-cpy
+origin
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push 
+Everything up-to-date
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin
+Everything up-to-date
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin main
+Everything up-to-date
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-cpy
+The authenticity of host 'github.com (20.87.225.212)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU. 
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: n
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git commit -m " changes"
+[main cefdc0a]  changes
+ 1 file changed, 12 insertions(+)
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 430 bytes | 430.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - At least 1 approving review is required by reviewers with write access.
+remote:
+To https://github.com/Manzikim/bundle1.git
+   54d6975..cefdc0a  main -> main
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-copy main
+remote: Repository not found.
+fatal: repository 'https://github.com/Manzikim/bundle-4.git1/' not found
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push git-cop main
+To https://github.com/Manzikim/git-copy
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Manzikim/git-copy'      
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing   
+hint: to the same ref. You may want to first integrate the remote changes      
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.     
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$
