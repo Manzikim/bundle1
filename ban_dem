@@ -1,0 +1,138 @@
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/Webtech_assign (main)
+$ cd
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~
+$ cd Do
+Documents/ Downloads/
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~
+$ cd Documents/
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents
+$ mkdir trial
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents
+$ cd trial/
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial
+$ touch ban_dem
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial
+$ git branch -m master main
+fatal: not a git repository (or any of the parent directories): .git
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial
+$ git init
+Initialized empty Git repository in C:/Users/NIC/Documents/trial/.git/
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (master)
+$ git branch -m master main
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git commit -m "Initial commit, over!"
+[main (root-commit) 089ebc9] Initial commit, over!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ban_dem
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote origin https://github.com/Manzikim/bundle1.git
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [
+--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>
+)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote orgin https://github.com/Manzikim/bundle1.git
+error: unknown subcommand: `orgin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [
+--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>
+)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote origin https://github.com/Manzikim/bundle1.git
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [
+--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>
+)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git remote add origin https://github.com/Manzikim/bundle1.git
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Manzikim/bundle1.git
+ * [new branch]      main -> main
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git branch dev
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (dev)
+$ git branch test
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (dev)
+$ git checkout dev
+Already on 'dev'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (dev)
+$ git branch -D test
+Deleted branch test (was 089ebc9).
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (dev)
+$
