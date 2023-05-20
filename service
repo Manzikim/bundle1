@@ -1,0 +1,42 @@
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ git add service.html
+fatal: pathspec 'service.html' did not match any files
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+unserting
+$ touch service.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ git add service.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ vim service.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ git add service.html
+warning: in the working copy of 'service.html', LF will be
+next time Git touches it
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ git commit -m "adding service.html"
+[ft/bundle-2 befbd9d] adding service.html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 service.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/bundle-2
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 73.00 KiB/s, done
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+/pull/new/ft/bundle-2
+remote:
+To https://github.com/Manzikim/bundle1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
