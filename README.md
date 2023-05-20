@@ -453,3 +453,101 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
 $
+'
+  
+  
+  
+  
+  
+  
+  
+  
+ bundle 3 exercise 2
+  
+  
+  
+  NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ touch kim.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git commit -m 
+error: switch `m' requires a value
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git commit -m "hhh"
+[main 0aeecf3] hhh
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 kim.html
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin mmain
+error: src refspec mmain does not match any
+error: failed to push some refs to 'https://github.com/Manzikim/bundle1.git'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git push origin main
+To https://github.com/Manzikim/bundle1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Manzikim/bundle1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git add .
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git commit -m " Add chanes"
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 464 bytes | 232.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:      
+remote:      https://github.com/Manzikim/bundle1/pull/new/ft/home-page-redesign       
+remote:
+To https://github.com/Manzikim/bundle1.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+NIC@DESKTOP-J0Q1ROH MINGW64 ~/Documents/trial (ft/home-page-redesign)
+$
